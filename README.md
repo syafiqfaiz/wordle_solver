@@ -20,7 +20,7 @@ Pelajar perlu mengubahsuai code utk menambahbaik wordle solver ini.
 
 ### Cara untuk `execute` code
 1) Muat turun kedua-dua file `wordle.js` dan `word.js`
-2) `word.js` mengadungi senarai perkataan dalam bahasa ingeris yang mempunyai 4 aksara sahaja
+2) `word.js` mengadungi senarai perkataan dalam bahasa ingeris yang mempunyai 5 aksara sahaja
 3) `wordles.js` mengandungi code utama
 4) Buka `terminal` dan pastikan anda berada di directory sama dengan folder code yang sudah dimuat turun
 5) Kemaskini nilai dalam code utk sesuaikan variable dengan permainan wordle yg anda sedang buat.
