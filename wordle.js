@@ -23,12 +23,19 @@ const hasLetterInPosition = (word, letter, position) => {
 
   return word[position] === letter;
 }
+const doesNotHasLetterInPosition = (word, letter, position) => {
+  if (letter === undefined) return true;
+
+  return word[position] !== letter;
+}
 
 const filteredWords = allWords.filter(word => {
   return hasLetters.every(letter => containsLetter(word, letter)) &&
   mustNotHaveLetters.every(letter => doesNotContainLetter(word, letter)) &&
-  mustHaveLettersInPosition.every((letter, index) => hasLetterInPosition(word, letter, index))
+  mustHaveLettersInPosition.every((letter, index) => hasLetterInPosition(word, letter, index)) && 
+  mustNotHaveLettersInPosition.every((letter, index) => doesNotHasLetterInPosition(word, letter, index)) 
 })
 
 console.log(filteredWords);
 console.log('possible words', filteredWords.length);
+
